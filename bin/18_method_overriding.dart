@@ -1,12 +1,18 @@
+// overriding itu adalah menulis ulang method di class child nya
+
 class Manager{
   String? name;
 
   void sayHello(String name){
-    print('Hello $name, My Name is ${this.name}');
+    print('Hello $name, My Name is Manager ${this.name}');
   }
 }
 
 class VicePresident extends Manager{
+
+  void sayHello(String name){
+    print('Hello $name, My Name is Vice President ${this.name}');
+  }
 
 }
 
